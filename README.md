@@ -1,9 +1,9 @@
-Bistromathique
+Calculator
 ==============
  
 
 
-Bistromathique rules:
+Calculator rules:
 
     - only malloc, free, read, write and ... nothing else
     - for is banned from the bistro
