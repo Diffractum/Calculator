@@ -22,6 +22,7 @@ echo "math expr" | ./calc "base" "operator" "size of expr"
 ## Installation 
 
 Use the Makfile, write:
+
     -make all
     -make test
 
