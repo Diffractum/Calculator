@@ -6,9 +6,9 @@ Calculator
 Calculator rules:
 
     - only malloc, free, read, write and ... nothing else
-    - for is banned from the bistro
+    - for is banned from the Calculator
 
-## Bistromathique work like that:
+## Calculator work like that:
 
 echo "math expr" | ./calc "base" "operator" "size of expr"
 
