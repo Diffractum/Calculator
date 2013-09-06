@@ -14,7 +14,7 @@ echo "math expr" | ./calc "base" "operator" "size of expr"
 
     ex: echo "50*10+(32-5+(856/50))" | ./calc "0123456789" "()+-*/%" "21"
 
-## Operator implation 
+## Operator implantation 
 	
     - Addition, with negativ possibillity
     - Subtraction, come soon 
