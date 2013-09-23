@@ -63,18 +63,18 @@ t_stree		*push_digit_brac(t_stree *expr, int *neg, t_stree *begin)
 	if (last->number == NULL && last->op_id == '0')
 	{
 		last->number = expr->number;
-		last->neg = (*neg + expr->neg) / 2;
+		last->neg = (*neg + expr->neg) % 2;
 	}
 	else if (last->left == NULL)
 	{
 		last->left = expr;
-		last->left->neg = (*neg + expr->neg) / 2;
+		last->left->neg = (*neg + expr->neg) % 2;
 
 	}
 	else 
 	{
 		last->right = expr;
-		last->right->neg = (*neg + expr->neg) / 2;
+		last->right->neg = (*neg + expr->neg) % 2;
 	}
 	return (begin);
 }
