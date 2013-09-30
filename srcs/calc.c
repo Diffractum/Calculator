@@ -55,7 +55,7 @@ int	who_neg(t_stree *begin,char *base)
 }
 t_stree		*calc(t_stree *begin, char *base)
 {
-	if (begin->right->number == NULL)
+	if (begin->right != NULL)
 	{
 		begin->right = calc(begin->right, base);
 	}
