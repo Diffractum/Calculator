@@ -53,7 +53,7 @@ char	*addition(char *num_l,char *num_s, char *base)
 		{
 			tmp = base_nb(num_l[i - 1], base) + res;
 			result[i - 1] = base[tmp % ft_strlen(base)];
-			res = 0;
+			res = tmp / ft_strlen(base);
 		}
 		i--;
 		j--;
