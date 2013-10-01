@@ -8,7 +8,7 @@
 
 #include <stdlib.h>
 #include <unistd.h>
-#include "../header/bistromathique.h"
+#include "../includes/bistromathique.h"
 
 
 int	test_base_and_ops(char *base, char *ops)

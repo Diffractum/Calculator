@@ -22,7 +22,7 @@ SRCS=srcs/main.c\
      srcs/operators/subtraction.c\
      srcs/operators/operators_tool.c
 
-HEADERS=header/bistromathique.h header/operators.h
+HEADERS=includes/bistromathique.h includes/operators.h
 	
 OBJET=main.o\
       addition.o\

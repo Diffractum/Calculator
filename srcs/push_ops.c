@@ -7,7 +7,7 @@
 \*************************************/
 
 #include <stdlib.h>
-#include "../header/bistromathique.h"
+#include "../includes/bistromathique.h"
 
 int	first_neg(char *expr, int *i, char *ops)
 {

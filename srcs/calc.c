@@ -8,8 +8,8 @@
 
 #include <stdlib.h>
 #include <unistd.h>
-#include "../header/bistromathique.h"
-#include "../header/operators.h"
+#include "../includes/bistromathique.h"
+#include "../includes/operators.h"
 
 void	print_tree(t_stree *begin,char *base)
 {

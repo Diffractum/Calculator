@@ -8,7 +8,7 @@
 
 #include <unistd.h>
 #include <stdlib.h>
-#include "../header/bistromathique.h"
+#include "../includes/bistromathique.h"
 
 t_stree		*init_stree(void)
 {

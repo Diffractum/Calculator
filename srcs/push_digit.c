@@ -8,7 +8,7 @@
 
 #include <stdlib.h>
 #include <unistd.h>
-#include "../header/bistromathique.h"
+#include "../includes/bistromathique.h"
 
 t_stree		*push_digit(char *expr,char *base, int *i, int *neg, t_stree *begin)
 {

@@ -10,7 +10,7 @@
 #include <sys/types.h>
 #include <sys/uio.h>
 #include <unistd.h>
-#include "../header/bistromathique.h"
+#include "../includes/bistromathique.h"
 
 size_t	ft_strlen(char *str)
 {

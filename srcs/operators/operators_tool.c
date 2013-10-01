@@ -7,8 +7,8 @@
 \*************************************/
 
 #include <stdlib.h>
-#include "../../header/bistromathique.h"
-#include "../../header/operators.h"
+#include "../../includes/bistromathique.h"
+#include "../../includes/operators.h"
 
 int	base_nb(char c, char *base)
 {

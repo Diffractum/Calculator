@@ -7,8 +7,8 @@
 \*************************************/
 
 #include <stdlib.h>
-#include "../../header/bistromathique.h"
-#include "../../header/operators.h"
+#include "../../includes/bistromathique.h"
+#include "../../includes/operators.h"
 
 char	*add_res(int i, int res, char *result, char *base)
 {

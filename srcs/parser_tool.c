@@ -7,7 +7,7 @@
 \*************************************/
 
 #include <stdlib.h>
-#include "../header/bistromathique.h"
+#include "../includes/bistromathique.h"
 
 int	if_ops(char expr, char *ops)
 {

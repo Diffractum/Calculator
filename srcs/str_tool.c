@@ -8,7 +8,7 @@
 
 #include <stdlib.h>
 #include <unistd.h>
-#include "../header/bistromathique.h"
+#include "../includes/bistromathique.h"
 
 int	ft_strcmp_repeat(char *str1, char *str2)
 {
