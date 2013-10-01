@@ -32,17 +32,18 @@ char	*longer_nb(char *numb_1, char *numb_2,char *base)
 	}
 	else if (ft_strlen(numb_1) == ft_strlen(numb_2))
 	{
-		while (numb_1[i] != numb_2[i])
+		while (numb_1[i] == numb_2[i])
 		{
-			if (base_nb(numb_1[i], base) > base_nb(numb_2[i], base))
-			{
-				return (numb_1);
-			}
-			else if (base_nb(numb_1[i], base) > base_nb(numb_2[i], base))
-			{
-				return (numb_2);
-			}
+
 			i++;
+		}
+		if (base_nb(numb_1[i], base) > base_nb(numb_2[i], base))
+		{
+			return (numb_1);
+		}
+		else if (base_nb(numb_1[i], base) < base_nb(numb_2[i], base))
+		{
+			return (numb_2);
 		}
 	}
 	return (numb_2);
@@ -58,18 +59,19 @@ char	*smaller_nb(char *numb_1, char *numb_2, char *base)
 	}
 	else if (ft_strlen(numb_1) == ft_strlen(numb_2))
 	{
-		while (numb_1[i] != numb_2[i])
+		while (numb_1[i] == numb_2[i])
 		{
-			if (base_nb(numb_1[i], base) > base_nb(numb_2[i],  base))
-			{
-				return (numb_2);
-			}
-			else if (base_nb(numb_1[i], base) > base_nb(numb_2[i], base))
-			{
-				return (numb_1);
-			}
 			i++;
 		}
+		if (base_nb(numb_1[i], base) > base_nb(numb_2[i],  base))
+		{
+			return (numb_2);
+		}
+		else if (base_nb(numb_1[i], base) < base_nb(numb_2[i], base))
+		{
+			return (numb_1);
+		}
+
 	}
 	return (numb_1);
 }

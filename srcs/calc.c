@@ -11,14 +11,15 @@
 #include "../header/bistromathique.h"
 #include "../header/operators.h"
 
-void	print_tree(t_stree *begin)
+void	print_tree(t_stree *begin,char *base)
 {
 	if (begin->number == NULL)
 	{
 		if (begin->left->number != NULL)
 		{
 			if (begin->left->neg == 1)
-				ft_putstr("-");
+				if (begin->left->number[0] != base[0])
+					ft_putstr("-");
 			ft_putstr(begin->left->number);
 		}
 		ft_putchar(begin->op_id);
@@ -26,12 +27,13 @@ void	print_tree(t_stree *begin)
 	else if (begin->op_id == '0')
 	{
 		if (begin->neg == 1)
-			ft_putstr("-");
+			if (begin->number[0] != base[0])	
+				ft_putstr("-");
 		ft_putstr(begin->number);
 	}
 	if (begin->right != NULL)
 	{
-		print_tree(begin->right);
+		print_tree(begin->right, base);
 	}
 	else
 	ft_putchar('\n');

@@ -58,7 +58,7 @@ t_stree		*parser_brac(char *base, char *ops, int *i, char *expr)
 		}
 		else if(expr[*i] == ops[1])
 		{
-			print_tree(begin);
+			print_tree(begin, base);
 			return (calc(begin, base));
 		}
 		*i = *i + 1;
@@ -100,7 +100,7 @@ t_stree		*parser(char *base, char *ops, char *expr, t_stree *begin)
 		}
 		*i = *i + 1;
 	}
-	print_tree(begin);
+	print_tree(begin, base);
 	return (calc(begin, base));
 }
 int	eval_expr(char *base, char *ops, char *expr)
@@ -113,6 +113,6 @@ int	eval_expr(char *base, char *ops, char *expr)
 		write(2, SYNTAX_ERROR_MSG, ft_strlen(SYNTAX_ERROR_MSG));
 		return (1);
 	}
-	print_tree(begin);
+	print_tree(begin, base);
 	return (0);
 }

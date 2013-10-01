@@ -51,7 +51,7 @@ void	ft_putchar(char c);
 void	ft_putstr(char *str);
 
 /* calc.c */
-void		print_tree(t_stree *begin);
+void		print_tree(t_stree *begin, char *base);
 t_stree		*calc(t_stree *begin, char *base);
 
 #endif

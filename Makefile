@@ -47,7 +47,7 @@ $(OBJET): $(SRCS) $(HEADERS)
 clean:
 	@rm -rf $(OBJET)
 
-reclean: clean
+fclean: clean
 	@rm -rf $(NAME)
 
 test:
